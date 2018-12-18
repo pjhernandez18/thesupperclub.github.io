@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .page-header.page-header-white {
     background-color: white;
     height: 120vh;
