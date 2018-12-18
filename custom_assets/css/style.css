@@ -24,14 +24,17 @@ img.img-logo {
     width: 100%;
     margin-bottom: 20px;
 }
-img.img-company {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    height: 400px;
-   
-
+.img-social {
+    color: black;
+    height: 50px;
+    max-width: 100%;
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-right: 20px;
+}
+#social_images {
+    text-align: center;
 }
 
 .navbar-scope.navbar-transparent .navbar-brand,
@@ -69,4 +72,8 @@ img.img-company {
 .row{
     margin-left: auto;
     margin-right: auto;
+}
+.contact-form label {
+    color: black;
+    float:left;
 }

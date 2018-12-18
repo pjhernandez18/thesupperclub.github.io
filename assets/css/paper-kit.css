@@ -9997,6 +9997,7 @@ body {
 
 .card.card-profile [class*=col-] .card-body {
   padding-top: 0px;
+
 }
 .card.card-profile [class*=col-] .card-body .card-title {
   margin-top: 10px !important;
