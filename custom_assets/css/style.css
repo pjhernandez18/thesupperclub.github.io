@@ -22,11 +22,16 @@ html {
 
 img.img-logo {
     width: 100%;
+    margin-bottom: 20px;
 }
 img.img-company {
-    height: 100px;
-    max-width: 100%;
-    margin: 20px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 400px;
+   
+
 }
 
 .navbar-scope.navbar-transparent .navbar-brand,
@@ -44,8 +49,8 @@ img.img-company {
     background-color: #66615B;
 }
 .btn.btn-scope {
-    border-color: #66615B;
-    background-color: #66615B;;
+    border-color: rgb(0,191,255);
+    background-color: rgb(0,191,255);
 }
 .btn.btn-scope:hover,
 .btn.btn-scope:active,
@@ -58,6 +63,10 @@ img.img-company {
     position: absolute;
 }
 
-#section-about{
-	position: relative;
+.icon-item{
+    color: rgb(0,191,255);
+}
+.row{
+    margin-left: auto;
+    margin-right: auto;
 }
