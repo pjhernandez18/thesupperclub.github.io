@@ -32,12 +32,15 @@
 </head>
 <body>
 
+
 <!--    Navbar here         -->
   <nav class="navbar navbar-scope navbar-expand-lg fixed-top navbar-transparent nav-down" color-on-scroll="500">
         <div class="container">
 			<div class="navbar-translate">
 				<!-- need to change site link to supperclubsc.com later on -->
-				<a class="navbar-brand" href="">USC's The Supper Club</a>
+				<div class="navbar-brand">
+					<a class="navbar-brand" href="">USC's The Supper Club</a>
+				</div>
 	            <button class="navbar-toggler navbar-toggler-right navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-bar"></span>
 					<span class="navbar-toggler-bar"></span>
@@ -69,36 +72,100 @@
 	        </div>
 		</div>
     </nav>
-
 <!-- End navbar -->
 
-<div class="page-header page-header-white" data-parallax="true">
+<!-- Main landing -->
+<div id="particles-bg" class="page-header page-header-white" data-parallax="true">
 	<div class="content-center">
 		<div class="container">
 			<div class="motto">
+				<br/>
+				<br/>
+				<br/>
 				<div class="img-logo-wrapper">
 					<img class="img-logo" src="custom_assets/img/supper-club-logo.png"/>
 				</div>
-				<h1>Good Food. Good People.</h1>
-				<h3> Start exploring and dining with us! </h3>
+				<h1 class="description">Good Food. Good People.</h1>
+				<h3 class="description"> Start exploring and dine with us! </h3>
 				<br>
-				 <a href="./restaurants" class="btn btn-outline-neutral btn-round"></i>Restaurants</a>
-			        <button type="button" class="btn btn-outline-neutral btn-round">Learn More</button>
-			     <br>
+				 <a href="./restaurants" class="btn btn-scope"></i>Restaurants</a>
+			        <a href="#section-about" class="btn btn-scope" data-smooth-scroll="true">Learn More</a>
+
 			</div>
 		</div>
 	</div>
-
-
-    <!-- content come here     -->
-
 </div>
+<!-- End Landing --> 
 
-
-
-<!-- Modal Bodies come here -->
-
-<!--   end modal -->
+<!-- About Section --> 
+   <div class="wrapper">
+		<div class="section text-center landing-section" id ="section-about">
+            <div class="container"> 
+                <div class="row"> 
+                    <div class="col-md-8 ml-auto mr-auto">
+                        <h2 class="title">Explore LA and share your love of food with awesome people.</h2>
+                        <h5>
+                       		Los Angeles is home to an endless variety of cuisines, talented chefs, and creative restauranteurs that continue to make this city a top food attraction. As members, you'll have the chance to explore the best food this city has to offer. Best of all, you'll join a tigh-knit community of 'foodies' to venture out with. 
+                        </h5>
+                        <br>
+                        <a href="#paper-kit" class="btn btn-danger btn-round">See Details</a>
+                    </div>
+                </div>
+				<br/><br/>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="info">
+							<div class="icon icon-danger">
+								<i class="nc-icon nc-album-2"></i>
+							</div>
+							<div class="description">
+								<h4 class="info-title">Beautiful Gallery</h4>
+								<p class="description">Spend your time generating new ideas. You don't have to think of implementing.</p>
+								<a href="#pkp" class="btn btn-link btn-danger">See more</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="info">
+							<div class="icon icon-danger">
+								<i class="nc-icon nc-bulb-63"></i>
+							</div>
+							<div class="description">
+								<h4 class="info-title">New Ideas</h4>
+								<p>Larger, yet dramatically thinner. More powerful, but remarkably power efficient.</p>
+								<a href="#pkp" class="btn btn-link btn-danger">See more</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="info">
+							<div class="icon icon-danger">
+								<i class="nc-icon nc-chart-bar-32"></i>
+							</div>
+							<div class="description">
+								<h4 class="info-title">Statistics</h4>
+								<p>Choose from a veriety of many colors resembling sugar paper pastels.</p>
+								<a href="#pkp" class="btn btn-link btn-danger">See more</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="info">
+							<div class="icon icon-danger">
+								<i class="nc-icon nc-sun-fog-29"></i>
+							</div>
+							<div class="description">
+								<h4 class="info-title">Delightful design</h4>
+								<p>Find unique and handmade delightful designs related items directly from our sellers.</p>
+								<a href="#pkp" class="btn btn-link btn-danger">See more</a>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
+    
 
 
 </body>
