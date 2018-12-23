@@ -1,7 +1,7 @@
 <!--
 	Supper Club website
 
-	Created by P.J. Hernandez on 
+	Created by P.J. Hernandez on Dec 20, 2018
 
 	Copyright © 2018 Paul Jerome Hernandez. All rights reserved. 
 -->
@@ -321,33 +321,33 @@
 		<div class="row">
 			<div class="col-md-8 ml-auto mr-auto">
 				<h2 class="text-center">Contact Us</h2>
-				<div class="contact-form">
+				<form action="https://formspree.io/thesupperclubsc@gmail.com" class="contact-form" method="POST">
 					<div class="row">
 						<div class="col-md-6">
 							<label>First Name</label>
-							<input id="firstName" class="form-control" placeholder="First Name">
+							<input id="firstName" name="First Name" class="form-control" placeholder="First Name">
 						</div>
 						<div class="col-md-6">
 							<label>Last Name</label>
-							<input id="lastName" class="form-control" placeholder="Last Name">
+							<input id="lastName" name="Last Name" class="form-control" placeholder="Last Name">
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
 							<label>Email</label>
-							<input id="email" class="form-control" placeholder="Email">
+							<input id="email" name="Reply To" class="form-control" placeholder="Email">
 						</div>
 					</div>
 					<div class="col-md-12">
 						<label>Message</label>
-						<textarea id="contactMessage" class="form-control" rows="6" placeholder="Message"></textarea>
+						<textarea id="contactMessage" name="Message" class="form-control" rows="6" placeholder="Message"></textarea>
 					</div>
 					<div class="row">
 						<div class="col-md-4 offset-md-4">
-							<button onclick="submit()" class="btn btn-scope btn-lg btn-fill">Send Message</button>
+							<button type="submit" class="btn btn-scope btn-lg btn-fill">Send Message</button>
 						</div>
 					</div>
-				</div>
+				</form>
 			</div>
 		</div>
 		<br>
