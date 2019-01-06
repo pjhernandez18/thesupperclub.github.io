@@ -123,28 +123,29 @@
 <!-- End where we've been--> 
 
 <!-- Yelp Fusion Api -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
 <script> 
 	function yelpQuery() {
-		var client_id = 'fH_2bdjaBrjRvxne2lO3sQ'
-		var API_KEY = 'Bearer ezVut3lGqFJ7HXBTot9_Y8Nv2lcAwbVucOjwhk-g2iAwiyG5gnZ0NBm9U0D7X5bxAhRI4RhJ9DHVfg37r_32BRvg2Ys0jHSZvPoW5IymJq3DyPI9bVzz8Oa3lEkxXHYx'
+		var data = null;
 
-		var yelp_url = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=' + document.suggestion.term.value + '&location='+document.suggestion.location.value + "'"
-		 $.ajax({
-	            url: yelp_url,
-	            headers: {
-	             'Authorization': API_KEY,
-	         },
-	            method: 'GET',
-	            dataType: 'json',
-	            success: function(data){
-	                console.log('success: '+data);
-	            }
-	         });     
+		var xhr = new XMLHttpRequest();
+		xhr.withCredentials = true;
+
+		xhr.addEventListener("readystatechange", function () {
+		  if (this.readyState === 4) {
+		    console.log(this.responseText);
+		  }
+		});
+
+		xhr.open("GET", "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=milkbar&location=los%20angeles");
+		xhr.setRequestHeader("Authorization", "Bearer ezVut3lGqFJ7HXBTot9_Y8Nv2lcAwbVucOjwhk-g2iAwiyG5gnZ0NBm9U0D7X5bxAhRI4RhJ9DHVfg37r_32BRvg2Ys0jHSZvPoW5IymJq3DyPI9bVzz8Oa3lEkxXHYx");
+		xhr.setRequestHeader("cache-control", "no-cache");
+		xhr.setRequestHeader("Postman-Token", "ac6df6eb-b086-4776-a24a-4ec32ee8457f");
+
+		xhr.send(data);
 		
 	}
 </script>
+
   <div class="wrapper">
 		<div class="section text-center landing-section" id ="section-yelp-search">
             <div class="container"> 
@@ -176,8 +177,8 @@
 
 
 </div><!-- Core JS Files -->
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
-<script src="../assets/js/popper.js" type="text/javascript"></script>
+<script src="../assets/js/jquery-3.2.1.js" type="text/javascript"></script>
+<script src="../assets/js/jquery-ui-1.12.1.custom.min.js" type="text/javascript"></script><script src="../assets/js/popper.js" type="text/javascript"></script>
 <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
  
 <!-- Switches -->
