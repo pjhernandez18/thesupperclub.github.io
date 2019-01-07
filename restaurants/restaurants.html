@@ -124,26 +124,19 @@
 
 <!-- Yelp Fusion Api -->
 <script> 
-	function yelpQuery() {
-		var data = null;
+		var search_btn = document.getElementById("search_btn");
 
-		var xhr = new XMLHttpRequest();
-		xhr.withCredentials = true;
-
-		xhr.addEventListener("readystatechange", function () {
-		  if (this.readyState === 4) {
-		    console.log(this.responseText);
-		  }
+		search_btn.addEventListener("click", function(){
+			var yelpRequest = new XMLHttpRequest();
+			yelpRequest.open('GET', "https://api.yelp.com/v3/businesses/search?term=milkbar&location=los angeles");
+			yelpRequest.setRequestHeader("Authorization", "Bearer ezVut3lGqFJ7HXBTot9_Y8Nv2lcAwbVucOjwhk-g2iAwiyG5gnZ0NBm9U0D7X5bxAhRI4RhJ9DHVfg37r_32BRvg2Ys0jHSZvPoW5IymJq3DyPI9bVzz8Oa3lEkxXHYx");
+			yelpRequest.onload = function(){
+				var data = JSON.parse(yelpRequest.responseText);
+				console.log(data[0]);
+			};
+			yelpRequest.send();
 		});
 
-		xhr.open("GET", "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=milkbar&location=los%20angeles");
-		xhr.setRequestHeader("Authorization", "Bearer ezVut3lGqFJ7HXBTot9_Y8Nv2lcAwbVucOjwhk-g2iAwiyG5gnZ0NBm9U0D7X5bxAhRI4RhJ9DHVfg37r_32BRvg2Ys0jHSZvPoW5IymJq3DyPI9bVzz8Oa3lEkxXHYx");
-		xhr.setRequestHeader("cache-control", "no-cache");
-		xhr.setRequestHeader("Postman-Token", "ac6df6eb-b086-4776-a24a-4ec32ee8457f");
-
-		xhr.send(data);
-		
-	}
 </script>
 
   <div class="wrapper">
@@ -163,7 +156,7 @@
 						    <input type="text" class="form-control" name="location" id="validationDefault02" placeholder="address, neighborhood, state, zip..." required/>
 						  </div>
 					     <div class="form-group">
-					      	<button type="submit" class="btn btn-scope" onclick="yelpQuery()">Search</button>
+					      	<button id="search_btn" type="submit" class="btn btn-scope">Search</button>
 					     </div>
 					  </div>
 					</form>
