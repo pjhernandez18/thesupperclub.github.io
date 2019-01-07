@@ -121,24 +121,6 @@
 	</div>
 </div>
 <!-- End where we've been--> 
-
-<!-- Yelp Fusion Api -->
-<script> 
-		var search_btn = document.getElementById("search_btn");
-
-		search_btn.addEventListener("click", function(){
-			var yelpRequest = new XMLHttpRequest();
-			yelpRequest.open('GET', "https://api.yelp.com/v3/businesses/search?term=milkbar&location=los angeles");
-			yelpRequest.setRequestHeader("Authorization", "Bearer ezVut3lGqFJ7HXBTot9_Y8Nv2lcAwbVucOjwhk-g2iAwiyG5gnZ0NBm9U0D7X5bxAhRI4RhJ9DHVfg37r_32BRvg2Ys0jHSZvPoW5IymJq3DyPI9bVzz8Oa3lEkxXHYx");
-			yelpRequest.onload = function(){
-				var data = JSON.parse(yelpRequest.responseText);
-				console.log(data[0]);
-			};
-			yelpRequest.send();
-		});
-
-</script>
-
   <div class="wrapper">
 		<div class="section text-center landing-section" id ="section-yelp-search">
             <div class="container"> 
@@ -165,7 +147,8 @@
         </div>
    </div>
 
-
+<!-- Yelp Fusion Api -->
+<script src="../node.js/yelp-fusion.js"></script>
 <!-- end yelp -->
 
 
