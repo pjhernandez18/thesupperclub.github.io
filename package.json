@@ -1,0 +1,30 @@
+{
+  "name": "thesupperclub.github.io",
+  "version": "1.0.0",
+  "description": "USC's The Supper Club website. Hosted on Github pages.",
+  "main": "node.js",
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "pug": "^2.0.3",
+    "yelp-fusion": "^2.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pjhernandez18/thesupperclub.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pjhernandez18/thesupperclub.github.io/issues"
+  },
+  "homepage": "https://github.com/pjhernandez18/thesupperclub.github.io#readme"
+}
